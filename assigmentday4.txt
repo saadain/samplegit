@@ -1,0 +1,43 @@
+Spring Core 
+1.	Design the Employee Application with Model class Employee with following fields.
+              private Long id;
+	private Long organizationId;
+	private Long departmentId;
+	private String name;
+	private int age;
+	private String position;
+2.	Create the public default and parameterized constructor.
+3.	Write an EmployeeService class to perform the operations.
+a.	Public String addEmployee(Employee employee)
+b.	Public String updateEmployee(long id)
+c.	Public String deleteEmployee(long id)
+d.	Public Optional<Employee> findById(long id)
+e.	Public Optional<List<Employee>> getEmployees()
+f.	Public Optional<List<Employee>> findByOrganizationId(long id)
+4.	Write a EmployeeRepository class to perform the DB operations on Employee.
+Public String addEmployee(Employee employee)
+Public String updateEmployee(long id)
+Public String deleteEmployee(long id)
+Public Optional<Employee> findById(long id)
+Public Optional<List<Employee>> getEmployees()
+Public Optional<List<Employee>> findByOrganizationId(long id)
+
+5.	Write a menu driven program for this.
+6.	Design the Department class with following fields.
+              private Long id;
+	private Long organizationId;
+	private String name;
+              private List<Employee> employees;
+7.	Repeat steps 3 to 5 for Department.
+8.	Design the Organization class with following field.
+
+private Long id;
+		private String name;
+		private String address;
+		private List<Department> departments = new ArrayList<>();
+		private List<Employee> employees = new ArrayList<>();
+	
+
+9.	Repeat the steps from 3 to 5 for Organization.
+10.	Implement Singleton practice for all service and DAOs.
+
